@@ -1,0 +1,16 @@
+# windows thumbnail cache
+Thumbs.db
+
+# mac system
+.DS_Store
+
+# editor
+.idea/
+.project
+.settings
+
+# node.js
+npm-debug.log
+node_modules/
+
+dist/

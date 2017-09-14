@@ -1,0 +1,136 @@
+@import 'reset';
+ 
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+}
+html, body { font-size: 12px; font-family: "Arial", "microsoft yahei"; font-weight: normal; color: #333; }
+dd,dl,dt,h1,h2,h3,h4,h5,h6,img,input,li,ol,p,textarea,ul {
+	border: none;
+	list-style: none;
+}
+
+a { text-decoration: none; }
+
+a:focus,button:focus,input:focus,textarea:focus { outline: 0; }
+
+h1, .h1 { font-size: 24px; }
+h2, .h2 { font-size: 20px; }
+h3, .h3 { font-size: 18px; }
+h4, .h4 { font-size: 15px; }
+h5, .h5 { font-size: 14px; }
+h6, .h6 { font-size: 13px; }
+
+.font12 {font-size: 12px;color: #a1a1a1;}
+.font14 {font-size: 14px;}
+.font18 {font-size: 18px;}
+.font20 {font-size: 20px;color: #a4a4a4;text-align: center;}
+.font24 {font-size: 24px;color: #fff;}
+.font36 {font-size: 36px;color: #2f2f2f;}
+.clearfix:after{clear: both;}
+.clearfix:before, .clearfix:after{display: table;content:" ";}
+
+// 模块布局
+
+.wall {min-width: 1000px; margin: 0 auto;}
+
+.main-container{
+    width: 100%;
+    min-width: 1000px;
+    padding-top: 85px;
+    margin: 0 auto;
+}
+
+.y_big_title { height: 36px;line-height: 36px; text-align: center;font-weight: normal; margin: 20px 0 20px;}
+.cpfont {margin-top: 20px;height: 12px;line-height: 12px;text-align: center;}
+
+//baidu_share
+.bdshare-slide-button-box {
+    top: 52% !important;
+}
+//离线宝
+#zhichiBtnBox {
+    top: 37% !important;
+}
+
+
+// 进入项目主干
+html,body,.layout{
+	height: 100%;
+	overflow: hidden;
+
+	.top-nav{
+		background: #006cb8;
+		.ul-center{
+			width: 1200px;
+			margin: 0 auto;
+			background: #006cb8;
+			.layout-logo{
+				width: 100px;
+				height: 30px;
+				background: #5b6270;
+				border-radius: 3px;
+				float: left;
+				position: relative;
+				top: 15px;
+				left: 20px;
+			}
+			.layout-nav{
+				
+			}
+		}
+	}
+	
+	.layout-wrap{
+		height: calc(100% - 60px);
+		height: -webkit-calc(100% - 60px);
+		overflow: hidden;
+		// 左侧导航
+		.nav-left{
+			width: 160px;
+			height: 100%;
+			overflow: auto;
+			ul.ivu-menu-dark{
+				height: 100%;
+				.ivu-menu-item{
+					padding: 0;
+					a{
+						padding: 14px 24px;
+						display: inline-block;
+						width: 100%;
+						height: 100%; 
+						color: hsla(0,0%,100%,.7);
+						transition: all .2s ease-in-out;
+						&:hover{
+							color: #fff;
+						}
+					}
+					&.ivu-menu-item-active{
+						a.router-link-active{
+							color: #2d8cf0;
+						}
+					}
+				}
+			}
+		}
+		//右侧主体
+		.content-right{
+			width: calc(100% - 160px);
+			width: -webkit-calc(100% - 160px);
+			height: 100%;
+			position: absolute;
+			left: 160px;
+			top: 0;
+			overflow: auto;
+			.min-width{
+				min-width: 1200px;
+				height: 100%;
+				padding: 20px;
+			}
+		}
+	}
+	
+}
