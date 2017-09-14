@@ -14,9 +14,9 @@ bable6.x 业界主流
 
 开发环境
 
-    ./dev.sh 先对项目进行编译
+    ./dev.sh 先对项目进行编译
 
-    npm run dev 启动node服务，自动打开浏览器，输入`localhost:8080`
+    npm run dev 启动node服务，自动打开浏览器
 
 生产环境
 
