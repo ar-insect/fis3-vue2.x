@@ -49,17 +49,13 @@ TODO：需要对vue文件中的js部分增加eslint
 
 ### 开发环境
 
-    cd front
-    
-    npm i # 初始化执行
-    
-    sh dev.sh # 编译
+        cd front
+        npm i # 初始化执行
+        sh dev.sh # 编译
 
-    cd serv
-    
-    npm i # 初始化执行
-    
-    npm run dev # 启动server调试
+        cd serv
+        npm i # 初始化执行
+        npm run dev # 启动server调试
 
 ### 生产环境
 
