@@ -10,9 +10,9 @@
 
 ### 代码质量
 
-增加eslint代码验证工具，分为2个层面：
+增加eslint代码验证工具，分为2个阶段：
 
-1.代码编写，推荐使用`vscode`编辑器，配置vue文件的代码检测：文件 -> 首选项 -> 设置 增加如下配置
+1.代码编写阶段会对js进行语法检测，推荐使用`vscode`编辑器，配置vue文件的代码检测：文件 -> 首选项 -> 设置 增加如下配置
 
         "eslint.validate": [
             "javascript",
@@ -21,7 +21,7 @@
 
 这样就支持vue文件中js代码块的语法验证了
 
-2.代码编译
+2.代码编译阶段
 
 在fis编译期间也会对项目代码进行扫描检验，对于不合格的代码会提示warn或者error
 
@@ -49,6 +49,7 @@ TODO：需要对vue文件中的js部分增加eslint
 
 ### 开发环境
 
+````
         cd front
         npm i # 初始化执行
         sh dev.sh # 编译
@@ -56,6 +57,7 @@ TODO：需要对vue文件中的js部分增加eslint
         cd serv
         npm i # 初始化执行
         npm run dev # 启动server调试
+````
 
 ### 生产环境
 
